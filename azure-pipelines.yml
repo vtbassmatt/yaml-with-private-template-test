@@ -1,2 +1,9 @@
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: PrivateProj/PrivateProj
+
 steps:
-- script: echo foo
+# from a private project in Azure Repos
+- template: template.yml@templates
